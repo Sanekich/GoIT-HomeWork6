@@ -20,6 +20,7 @@
   </head>
 
   <body>
+    <!-- ======== HEADER ======== -->
     <header class="header">
       <div class="container header-container">
         <nav class="nav">
@@ -44,18 +45,28 @@
             </li>
           </ul>
         </address>
+
+        <!-- C1: Burger button — mobile only -->
+        <button class="burger-btn" type="button" data-mobile-menu-open aria-label="Open mobile menu">
+          <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="4" width="24" height="2" fill="#2E2F42"/>
+            <rect y="11" width="24" height="2" fill="#2E2F42"/>
+            <rect y="18" width="24" height="2" fill="#2E2F42"/>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
+      <!-- ======== HERO ======== -->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <!-- FIX 2 & 4: button opens modal via JS (no checkbox hack); is a real <button> -->
           <button class="hero-btn" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
 
+      <!-- ======== FEATURES ======== -->
       <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
@@ -112,12 +123,19 @@
         </div>
       </section>
 
+      <!-- ======== TEAM ======== -->
       <section class="section team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-card">
-              <img src="./images/1.jpg" alt="Mark Guerrero" width="264" height="260" />
+              <img
+                src="./images/1.jpg"
+                srcset="./images/1.jpg 1x, ./images/1@2x.jpg 2x"
+                alt="Mark Guerrero"
+                width="264"
+                height="260"
+              />
               <div class="team-card-content">
                 <h3 class="team-name">Mark Guerrero</h3>
                 <p class="team-role">Product Designer</p>
@@ -147,7 +165,13 @@
             </li>
 
             <li class="team-card">
-              <img src="./images/2.jpg" alt="Tom Ford" width="264" height="260" />
+              <img
+                src="./images/2.jpg"
+                srcset="./images/2.jpg 1x, ./images/2@2x.jpg 2x"
+                alt="Tom Ford"
+                width="264"
+                height="260"
+              />
               <div class="team-card-content">
                 <h3 class="team-name">Tom Ford</h3>
                 <p class="team-role">Frontend Developer</p>
@@ -177,7 +201,13 @@
             </li>
 
             <li class="team-card">
-              <img src="./images/3.jpg" alt="Camila Garcia" width="264" height="260" />
+              <img
+                src="./images/3.jpg"
+                srcset="./images/3.jpg 1x, ./images/3@2x.jpg 2x"
+                alt="Camila Garcia"
+                width="264"
+                height="260"
+              />
               <div class="team-card-content">
                 <h3 class="team-name">Camila Garcia</h3>
                 <p class="team-role">Marketing</p>
@@ -207,7 +237,13 @@
             </li>
 
             <li class="team-card">
-              <img src="./images/4.jpg" alt="Daniel Wilson" width="264" height="260" />
+              <img
+                src="./images/4.jpg"
+                srcset="./images/4.jpg 1x, ./images/4@2x.jpg 2x"
+                alt="Daniel Wilson"
+                width="264"
+                height="260"
+              />
               <div class="team-card-content">
                 <h3 class="team-name">Daniel Wilson</h3>
                 <p class="team-role">UI Designer</p>
@@ -239,13 +275,20 @@
         </div>
       </section>
 
+      <!-- ======== PORTFOLIO ======== -->
       <section class="section portfolio">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-card">
               <div class="portfolio-image-wrapper">
-                <img src="./images/p1.jpg" alt="Banking App" height="300" width="360" />
+                <img
+                  src="./images/p1.jpg"
+                  srcset="./images/p1.jpg 1x, ./images/p1@2x.jpg 2x"
+                  alt="Banking App"
+                  height="300"
+                  width="360"
+                />
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay-text">Figma, HTML &amp; CSS landing page</p>
                 </div>
@@ -257,7 +300,13 @@
             </li>
             <li class="portfolio-card">
               <div class="portfolio-image-wrapper">
-                <img src="./images/p2.jpg" alt="Cashless Payment" height="300" width="360" />
+                <img
+                  src="./images/p2.jpg"
+                  srcset="./images/p2.jpg 1x, ./images/p2@2x.jpg 2x"
+                  alt="Cashless Payment"
+                  height="300"
+                  width="360"
+                />
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay-text">Mobile UI/UX grocery shop interface</p>
                 </div>
@@ -269,7 +318,13 @@
             </li>
             <li class="portfolio-card">
               <div class="portfolio-image-wrapper">
-                <img src="./images/p3.jpg" alt="Meditation App" height="300" width="360" />
+                <img
+                  src="./images/p3.jpg"
+                  srcset="./images/p3.jpg 1x, ./images/p3@2x.jpg 2x"
+                  alt="Meditation App"
+                  height="300"
+                  width="360"
+                />
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay-text">Mobile UI/UX grocery shop interface</p>
                 </div>
@@ -281,7 +336,13 @@
             </li>
             <li class="portfolio-card">
               <div class="portfolio-image-wrapper">
-                <img src="./images/p4.jpg" alt="Taxi Service" height="300" width="360" />
+                <img
+                  src="./images/p4.jpg"
+                  srcset="./images/p4.jpg 1x, ./images/p4@2x.jpg 2x"
+                  alt="Taxi Service"
+                  height="300"
+                  width="360"
+                />
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay-text">Web Social Media page Homepage</p>
                 </div>
@@ -293,7 +354,13 @@
             </li>
             <li class="portfolio-card">
               <div class="portfolio-image-wrapper">
-                <img src="./images/p5.jpg" alt="Screen Illustrations" height="300" width="360" />
+                <img
+                  src="./images/p5.jpg"
+                  srcset="./images/p5.jpg 1x, ./images/p5@2x.jpg 2x"
+                  alt="Screen Illustrations"
+                  height="300"
+                  width="360"
+                />
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay-text">Design with unique illustrations for beverage brands</p>
                 </div>
@@ -305,7 +372,13 @@
             </li>
             <li class="portfolio-card">
               <div class="portfolio-image-wrapper">
-                <img src="./images/p6.jpg" alt="Online Courses" height="300" width="360" />
+                <img
+                  src="./images/p6.jpg"
+                  srcset="./images/p6.jpg 1x, ./images/p6@2x.jpg 2x"
+                  alt="Online Courses"
+                  height="300"
+                  width="360"
+                />
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay-text">Marketing landing page to promote online courses</p>
                 </div>
@@ -359,7 +432,6 @@
           </ul>
         </div>
 
-        <!-- FIX 1: subscribe block is now a real <form> element -->
         <div class="footer-subscribe">
           <p class="social-title">Subscribe</p>
           <form class="footer-subscribe-form" action="#" method="post">
@@ -371,7 +443,6 @@
               name="subscribe-email"
               placeholder="E-mail"
             />
-            <!-- FIX 1: button is now inside <form>, so type="submit" is valid -->
             <button class="footer-subscribe-btn" type="submit">
               Subscribe
               <svg class="footer-subscribe-icon" width="24" height="24" fill="#ffffff">
@@ -383,11 +454,9 @@
       </div>
     </footer>
 
-    <!-- FIX 2 & 3: backdrop is placed directly after </footer> with no stray
-         <input> in between; modal state is toggled via .is-open class in JS -->
+    <!-- ======== MODAL ======== -->
     <div class="backdrop" data-modal>
       <div class="modal">
-        <!-- FIX 4: close control is a proper <button type="button">, not a <label> -->
         <button
           class="modal-close-btn"
           type="button"
@@ -401,9 +470,7 @@
 
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
-        <!-- FIX 5: contact form is a real <form> element -->
         <form class="modal-form" action="#" method="post">
-          <!-- Name -->
           <div class="modal-field">
             <label class="modal-label" for="modal-name">Name</label>
             <div class="modal-input-wrapper">
@@ -420,7 +487,6 @@
             </div>
           </div>
 
-          <!-- Phone -->
           <div class="modal-field">
             <label class="modal-label" for="modal-phone">Phone</label>
             <div class="modal-input-wrapper">
@@ -437,7 +503,6 @@
             </div>
           </div>
 
-          <!-- Email -->
           <div class="modal-field">
             <label class="modal-label" for="modal-email">Email</label>
             <div class="modal-input-wrapper">
@@ -454,7 +519,6 @@
             </div>
           </div>
 
-          <!-- Comment -->
           <div class="modal-field">
             <label class="modal-label" for="modal-comment">Comment</label>
             <textarea
@@ -465,9 +529,6 @@
             ></textarea>
           </div>
 
-          <!-- FIX 6: <input type="checkbox"> comes BEFORE <label> so that the
-               CSS adjacent-sibling selector (.modal-checkbox:checked + .modal-checkbox-label)
-               correctly matches and the custom checkbox style is applied. -->
           <div class="modal-checkbox-wrapper">
             <input
               class="modal-checkbox visually-hidden"
@@ -486,14 +547,74 @@
             </label>
           </div>
 
-          <!-- FIX 5: submit button is inside <form>, so type="submit" is valid -->
           <button class="modal-submit-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
 
+    <!-- ======== MOBILE MENU (C1: after footer, end of body) ======== -->
+    <div class="mobile-menu" data-mobile-menu>
+      <button
+        class="mobile-menu-close-btn"
+        type="button"
+        data-mobile-menu-close
+        aria-label="Close mobile menu"
+      >
+        <svg class="mobile-close-icon" width="8" height="8" viewBox="0 0 8 8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <!-- C6: nav at the top -->
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a class="mobile-nav-link link-current" href="./index.html">Studio</a></li>
+          <li><a class="mobile-nav-link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="mobile-nav-link" href="./contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <!-- C6: contacts + socials at the bottom -->
+      <div class="mobile-bottom">
+        <address style="font-style: normal;">
+          <ul class="mobile-contacts-list">
+            <li>
+              <!-- C8: static accent color on phone -->
+              <a class="mobile-contact-link accent" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a class="mobile-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mobile-social-list social-list">
+          <li><a href="#" class="social-link">
+            <svg width="16" height="16" fill="#f4f4fd">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a></li>
+          <li><a href="#" class="social-link">
+            <svg width="16" height="16" fill="#f4f4fd">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a></li>
+          <li><a href="#" class="social-link">
+            <svg width="16" height="16" fill="#f4f4fd">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a></li>
+          <li><a href="#" class="social-link">
+            <svg width="16" height="16" fill="#f4f4fd">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+
     <script>
-      // FIX 2 & 3 & 4: modal controlled by toggling .is-open on .backdrop
+      // Modal
       (function () {
         const backdrop = document.querySelector('[data-modal]');
         const openBtns = document.querySelectorAll('[data-modal-open]');
@@ -512,15 +633,39 @@
         openBtns.forEach(btn => btn.addEventListener('click', openModal));
         closeBtn.addEventListener('click', closeModal);
 
-        // Close on backdrop click (outside modal)
         backdrop.addEventListener('click', function (e) {
           if (e.target === backdrop) closeModal();
         });
 
-        // Close on Escape key
         document.addEventListener('keydown', function (e) {
           if (e.key === 'Escape' && backdrop.classList.contains('is-open')) {
             closeModal();
+          }
+        });
+      })();
+
+      // Mobile menu
+      (function () {
+        const menu = document.querySelector('[data-mobile-menu]');
+        const openBtn = document.querySelector('[data-mobile-menu-open]');
+        const closeBtn = document.querySelector('[data-mobile-menu-close]');
+
+        function openMenu() {
+          menu.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+          menu.classList.remove('is-open');
+          document.body.style.overflow = '';
+        }
+
+        openBtn.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+            closeMenu();
           }
         });
       })();
