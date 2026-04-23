@@ -498,7 +498,6 @@ img {
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: var(--white);
 }
 
@@ -927,13 +926,11 @@ img {
 }
 
 .footer-info {
-  text-align: center;
   flex-basis: 100%;
 }
 
 @media (min-width: 768px) {
   .footer-info {
-    text-align: left;
     flex-basis: 264px;
     flex-shrink: 0;
   }
