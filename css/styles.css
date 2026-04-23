@@ -494,6 +494,7 @@ img {
   max-width: 216px;
   margin: 0 auto 72px auto;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
@@ -788,6 +789,8 @@ img {
 .portfolio-card {
   width: 100%;
   background-color: var(--white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -800,6 +803,7 @@ img {
 @media (min-width: 1158px) {
   .portfolio-card {
     width: calc((100% - 48px) / 3);
+    box-shadow: none;
   }
 }
 
@@ -908,7 +912,7 @@ img {
     /* D4: 584px container for tablet */
     max-width: 584px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 16px;
   }
 }
 

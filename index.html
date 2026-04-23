@@ -49,9 +49,7 @@
         <!-- C1: Burger button — mobile only -->
         <button class="burger-btn" type="button" data-mobile-menu-open aria-label="Open mobile menu">
           <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect y="4" width="24" height="2" fill="#2E2F42"/>
-            <rect y="11" width="24" height="2" fill="#2E2F42"/>
-            <rect y="18" width="24" height="2" fill="#2E2F42"/>
+            <use href="./images/icons.svg#icon-menu" />
           </svg>
         </button>
       </div>
@@ -565,51 +563,53 @@
         </svg>
       </button>
 
-      <!-- C6: nav at the top -->
-      <nav class="mobile-nav">
-        <ul class="mobile-nav-list">
-          <li><a class="mobile-nav-link link-current" href="./index.html">Studio</a></li>
-          <li><a class="mobile-nav-link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="mobile-nav-link" href="./contacts.html">Contacts</a></li>
-        </ul>
-      </nav>
-
-      <!-- C6: contacts + socials at the bottom -->
-      <div class="mobile-bottom">
-        <address style="font-style: normal;">
-          <ul class="mobile-contacts-list">
-            <li>
-              <!-- C8: static accent color on phone -->
-              <a class="mobile-contact-link accent" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-            <li>
-              <a class="mobile-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
+      <div class="mobile-menu-content">
+        <!-- C6: nav at the top -->
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li><a class="mobile-nav-link link-current" href="./index.html">Studio</a></li>
+            <li><a class="mobile-nav-link" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="mobile-nav-link" href="./contacts.html">Contacts</a></li>
           </ul>
-        </address>
+        </nav>
 
-        <ul class="mobile-social-list social-list">
-          <li><a href="#" class="social-link">
-            <svg width="16" height="16" fill="#f4f4fd">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a></li>
-          <li><a href="#" class="social-link">
-            <svg width="16" height="16" fill="#f4f4fd">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a></li>
-          <li><a href="#" class="social-link">
-            <svg width="16" height="16" fill="#f4f4fd">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a></li>
-          <li><a href="#" class="social-link">
-            <svg width="16" height="16" fill="#f4f4fd">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a></li>
-        </ul>
+        <!-- C6: contacts + socials at the bottom -->
+        <div class="mobile-bottom">
+          <address style="font-style: normal;">
+            <ul class="mobile-contacts-list">
+              <li>
+                <!-- C8: static accent color on phone -->
+                <a class="mobile-contact-link accent" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li>
+                <a class="mobile-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-social-list social-list">
+            <li><a href="#" class="social-link">
+              <svg width="24" height="24" fill="#f4f4fd">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a></li>
+            <li><a href="#" class="social-link">
+              <svg width="24" height="24" fill="#f4f4fd">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a></li>
+            <li><a href="#" class="social-link">
+              <svg width="24" height="24" fill="#f4f4fd">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a></li>
+            <li><a href="#" class="social-link">
+              <svg width="24" height="24" fill="#f4f4fd">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
