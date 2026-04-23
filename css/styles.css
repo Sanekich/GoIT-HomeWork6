@@ -417,6 +417,7 @@ img {
 .mobile-social-list {
   display: flex;
   gap: 40px;
+  justify-content: flex-start;
 }
 
 .mobile-menu-content {
