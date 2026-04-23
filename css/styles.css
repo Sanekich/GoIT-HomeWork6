@@ -419,6 +419,16 @@ img {
   gap: 40px;
 }
 
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.mobile-bottom {
+  margin-top: auto;
+}
+
 /* =============================================
    HERO
    ============================================= */
@@ -1281,6 +1291,7 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
